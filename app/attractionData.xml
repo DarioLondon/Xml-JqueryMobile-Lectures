@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet  type="text/xsl" href="template.xsl" ?>
+
+<CatalogAttraction>
+    
+    <attraction>
+        <id>id_1</id>
+        <category type="Buildings">Buildings
+            <name>Buckingham Palace</name>
+             <link>id_1</link>
+            <location>
+                <postcode>SW1A 1AA</postcode>
+                <address>Buckingham Palace, London</address>
+                <tube>St. James's Park</tube>
+            </location>
+            <contacts>
+                <email>info@londonpass.com</email>
+                <telephone>0303 123 7300</telephone>
+            </contacts>
+            <picture>
+                <thumbnail>img/bpT.jpg</thumbnail>
+                <image><img>img/bp1.jpg</img></image>
+                <image><img>img/bp2.jpg</img></image>
+                <image><img>img/bp3.jpg</img></image>
+                <image><img>img/bt4.jpg</img></image>
+                <image><img>img/bt5.jpg</img></image>
+            </picture>
+            <price>
+                <adult>21.50</adult>
+            </price>
+            <shortDescription>
+                Buckingham Palace is the London residence and principal workplace of the reigning monarch of the United Kingdom.
+            </shortDescription>
+            <longDescription>
+                Buckingham Palace  is the London residence and principal workplace of the reigning monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focus for the British people at times of national rejoicing.
+                Originally known as Buckingham House, the building at the core of today's palace was a large townhouse built for the Duke of Buckingham in 1703 on a site that had been in private ownership for at least 150 years. It was acquired by King George III in 1761 as a private residence for Queen Charlotte and became known as "The Queen's House". During the 19th century it was enlarged, principally by architects John Nash and Edward Blore, who constructed three wings around a central courtyard. Buckingham Palace became the London residence of the British monarch on the accession of Queen Victoria in 1837.</longDescription>
+            <map>
+                <latitude>51.501476</latitude>
+                <longitude>-0.140634</longitude>
+            </map>
+            <openingTimes>
+                <monday>
+                    <open>10.00</open>
+                    <close>18.30</close>
+                </monday>
+                <tuesday>
+                    <open>10.00</open>
+                    <close>18.30</close>
+                </tuesday>
+                <wednesday>
+                    <open>10.00</open>
+                    <close>18.30</close>
+                </wednesday>
+                <thursday>
+                    <open>10.00</open>
+                    <close>18.30</close>
+                </thursday>
+                <friday>
+                    <open>10.00</open>
+                    <close>18.30</close>
+                </friday>
+                <saturday>
+                    <open>10.00</open>
+                    <close>18.30</close>
+                </saturday>
+                <sunday>
+                    <open>10.00</open>
+                    <close>18.30</close>
+                </sunday>
+            </openingTimes>
+        </category>
+    </attraction>
+    
+    
+    <attraction>
+          <id>id_2</id>
+        <category type="Ferries wheel">Ferris wheel
+            <name>London Eyes</name>
+             <link>id_2</link>
+            <location>
+                <postcode> SE1 7PB</postcode>
+                <address>Riverside Building County Hall Westminster Bridge Road , London</address>
+                <tube>Embankment</tube>
+            </location>
+            <contacts>
+                <email>customer.services@londoneye.com </email>
+                <telephone>+44 (0)871 781 3000</telephone>
+            </contacts>
+            <picture>
+                <thumbnail>img/leT.jpg</thumbnail>
+                <image><img>img/le1.jpg</img></image>
+                <image><img>img/le2.jpg</img></image>
+                <image><img>img/le3.jpg</img></image>
+                <image><img>img/le4.jpg</img></image>
+                <image><img>img/le5.jpg</img></image>
+            </picture>
+            <price>
+                <adult>28.35</adult>
+            </price>
+            <shortDescription>The London Eye is a giant Ferris wheel on the South Bank of the River Thames in London.</shortDescription>
+            <longDescription>The London Eye is a giant Ferris wheel on the South Bank of the River Thames in London. Also known as the Millennium Wheel, it has also been called by its owners the British Airways London Eye, then the Merlin Entertainments London Eye, then the EDF Energy London Eye. Since mid-January 2015, it has been known as the Coca-Cola London Eye, following an agreement signed in September 2014.
+                The structure is 443 feet (135 m) tall and the wheel has a diameter of 394 feet (120 m). When erected in 1999 it was the world's tallest Ferris wheel. Its height was surpassed by the 520 feet (158 m) tall Star of Nanchang in 2006, the 541 feet (165 m) tall Singapore Flyer in 2008, and the 550 feet (168 m) High Roller (Las Vegas) in 2014. Supported by an A-frame on one side only, unlike the taller Nanchang and Singapore wheels, the Eye is described by its operators as "the world's tallest cantilevered observation wheel".
+                </longDescription>
+            
+            <map>
+                <latitude>51.503399</latitude>
+                <longitude>-0.119519</longitude>
+            </map>
+            <openingTimes>
+                <monday>
+                    <open>10.00</open>
+                    <close>20.30</close>
+                </monday>
+                <tuesday>
+                    <open>10.00</open>
+                    <close>20.30</close>
+                </tuesday>
+                <wednesday>
+                    <open>10.00</open>
+                    <close>20.30</close>
+                </wednesday>
+                <thursday>
+                    <open>10.00</open>
+                    <close>20.30</close>
+                </thursday>
+                <friday>
+                    <open>10.00</open>
+                    <close>20.30</close>
+                </friday>
+                <saturday>
+                    <open>10.00</open>
+                    <close>20.30</close>
+                </saturday>
+                <sunday>
+                    <open>10.00</open>
+                    <close>20.30</close>
+                </sunday>
+            </openingTimes>
+        </category>
+    </attraction>
+    
+    
+    
+    <attraction>
+          <id>id_3</id>
+        <category type="Museum">Museum
+            <name>British Museum</name>
+              <link>id_3</link>
+            <location>
+                <postcode> WC1B 3DG </postcode>
+                <address>Great Russell St, London</address>
+                <tube>Holborn</tube>
+            </location>
+            <contacts>
+                <email>information@britishmuseum.org</email>
+                <telephone>+44(0)20 7323 8299</telephone>
+            </contacts>
+            <picture>
+                <thumbnail>img/btmT.jpg</thumbnail>
+                <image><img>img/btm1.jpg</img></image>
+                <image><img>img/btm2.jpg</img></image>
+                <image><img>img/btm3.jpg</img></image>
+                <image><img>img/btm4.jpg</img></image>
+                <image><img>img/btm5.jpg</img></image>
+            </picture>
+            <price>
+                <adult>Free</adult>
+            </price>
+            <shortDescription>The British Museum is a museum dedicated to human history, art, and culture, located in the Bloomsbury area of London	</shortDescription>
+            <longDescription>
+                The British Museum is a museum dedicated to human history, art, and culture, located in the Bloomsbury area of London. Its permanent collection, numbering some 8 million works, is among the largest and most comprehensive in existence and originates from all continents, illustrating and documenting the story of human culture from its beginnings to the present.
+                The British Museum was established in 1753, largely based on the collections of the physician and scientist Sir Hans Sloane. The museum first opened to the public on 15 January 1759, in Montagu House in Bloomsbury, on the site of the current museum building. Its expansion over the following two and a half centuries was largely a result of an expanding British colonial footprint and has resulted in the creation of several branch institutions, the first being the British Museum (Natural History) in South Kensington in 1881. Some objects in the collection, most notably the Elgin Marbles from the Parthenon, are the objects of controversy and of calls for restitution to their countries of origin.
+                	</longDescription>
+            <map>
+                <latitude>51.5194133</latitude>
+                <longitude>-0.1291453,17</longitude>
+            </map>
+            <openingTimes>
+                <monday>
+                    <open>10.00</open>
+                    <close>17.30</close>
+                </monday>
+                <tuesday>
+                    <open>10.00</open>
+                    <close>17.30</close>
+                </tuesday>
+                <wednesday>
+                    <open>10.00</open>
+                    <close>17.30</close>
+                </wednesday>
+                <thursday>
+                    <open>10.00</open>
+                    <close>17.30</close>
+                </thursday>
+                <friday>
+                    <open>10.00</open>
+                    <close>17.30</close>
+                </friday>
+                <saturday>
+                    <open>10.00</open>
+                    <close>17.30</close>
+                </saturday>
+                <sunday>
+                    <open>10.00</open>
+                    <close>17.30</close>
+                </sunday>
+            </openingTimes>
+        </category>
+    </attraction>
+    
+    
+    
+    <attraction>
+          <id>id_4</id>
+        <category type="Museum">Museum
+            <name>Science Museum</name>
+              <link>id_4</link>
+            <location>
+                <postcode> SW7 2DD</postcode>
+                <address>Exhibition Rd, London</address>
+                <tube>South Kensington Station</tube>
+            </location>
+            <contacts>
+                <email>info@sciencemuseum.ac.uk</email>
+                <telephone>+44(0)870 870 4868</telephone>
+            </contacts>
+            <picture>
+                <thumbnail>img/smT.jpg</thumbnail>
+                <image><img>img/sm1.jpg</img></image>
+                <image><img>img/sm2.jpg</img></image>
+                <image><img>img/sm3.jpg</img></image>
+                <image><img>img/sm4.jpg</img></image>
+                <image><img>img/sm5.jpg</img></image>
+            </picture>
+            <price>
+                <adult>Free</adult>
+            </price>
+            <shortDescription>The Science Museum is a major museum on Exhibition Road in South Kensington, London. It was founded in 1857 and today is one of the city's major tourist attractions, attracting 3.3 million visitors annually	</shortDescription>
+            <longDescription>A museum was founded in 1857 under Bennet Woodcroft from the collection of the Royal Society of Arts and surplus items from the Great Exhibition as part of the South Kensington Museum, together with what is now the Victoria and Albert Museum. It included a collection of machinery which became the Museum of Patents in 1858, and the Patent Office Museum in 1863. This collection contained many of the most famous exhibits of what is now the Science Museum. In 1883, the contents of the Patent Office Museum were transferred to the South Kensington Museum. In 1885, the Science Collections were renamed the Science Museum and in 1893 a separate director was appointed. The Art Collections were renamed the Art Museum, which eventually became the Victoria and Albert Museum.When Queen Victoria laid the foundation stone for the new building for the Art Museum, she stipulated that the museum be renamed after herself and her late husband. This was initially applied to the whole museum, but when that new building finally opened ten years later, the title was confined to the Art Collections and the Science Collections had to be divorced from it. </longDescription>
+            <map>
+                <latitude>51.4978095</latitude>
+                <longitude>-0.1767122,17</longitude>
+            </map>
+            <openingTimes>
+                <monday>
+                    <open>10.00</open>
+                    <close>17.30</close>
+                </monday>
+                <tuesday>
+                    <open>10.00</open>
+                    <close>17.30</close>
+                </tuesday>
+                <wednesday>
+                    <open>10.00</open>
+                    <close>17.30</close>
+                </wednesday>
+                <thursday>
+                    <open>10.00</open>
+                    <close>17.30</close>
+                </thursday>
+                <friday>
+                    <open>10.00</open>
+                    <close>17.30</close>
+                </friday>
+                <saturday>
+                    <open>10.00</open>
+                    <close>17.30</close>
+                </saturday>
+                <sunday>
+                    <open>10.00</open>
+                    <close>17.30</close>
+                </sunday>
+            </openingTimes>
+        </category>
+    </attraction>
+    
+    <attraction>
+          <id>id_5</id>
+        <category type="Buildings">Building
+            <name>St. Paul's Cathedral</name>
+              <link>id_5</link>
+            <location>
+                <postcode> EC4M 8AD </postcode>
+                <address>St. Paul's Churchyard, London </address>
+                <tube>St. Pauls's</tube>
+            </location>
+            <contacts>
+                <email>ireception@stpaulscathedral.org.uk</email>
+                <telephone>+44(0)207 246 8348</telephone>
+            </contacts>
+            <picture>
+                <thumbnail>img/stPT.jpg</thumbnail>
+                <image><img>img/stP1.jpg</img></image>
+                <image><img>img/stP2.jpg</img></image>
+                <image><img>img/stP3.jpg</img></image>
+                <image><img>img/stP4.jpg</img></image>
+                <image><img>img/stP5.jpg</img></image>
+            </picture>
+            <price>
+                <adult>18.00</adult>
+            </price>
+            <shortDescription>TSt Paul's Cathedral, London, is an Anglican cathedral, the seat of the Bishop of London and the mother church of the Diocese of London. It sits on Ludgate Hill at the highest point of the City of London.</shortDescription>
+            <longDescription>St Paul's Cathedral, London, is an Anglican cathedral, the seat of the Bishop of London and the mother church of the Diocese of London. It sits on Ludgate Hill at the highest point of the City of London. Its dedication to Paul the Apostle dates back to the original church on this site, founded in AD 604. The present church, dating from the late 17th century, was designed in the English Baroque style by Sir Christopher Wren. Its construction, completed in Wren's lifetime, was part of a major rebuilding programme in the City after the Great Fire of London.
+                The cathedral is one of the most famous and most recognisable sights of London. Its dome, framed by the spires of Wren's City churches, dominated the skyline for 300 years. At 365 feet (111 m) high, it was the tallest building in London from 1710 to 1962. The dome is among the highest in the world. St Paul's is the second largest church building in area in the United Kingdom after Liverpool Cathedral.
+                </longDescription>
+            <map>
+                <latitude>51.5138453</latitude>
+                <longitude>-0.1005393,17</longitude>
+            </map>
+            <openingTimes>
+                <monday>
+                    <open>8.30</open>
+                    <close>16.30</close>
+                </monday>
+                <tuesday>
+                    <open>8.30</open>
+                    <close>16.30</close>
+                </tuesday>
+                <wednesday>
+                    <open>8.30</open>
+                    <close>16.30</close>		
+                </wednesday>
+                <thursday>
+                    <open>8.30</open>
+                    <close>16.30</close>
+                </thursday>
+                <friday>
+                    <open>8.30</open>
+                    <close>16.30</close>
+                </friday>
+                <saturday>
+                    <open>8.30</open>
+                    <close>16.30</close>
+                </saturday>
+                <sunday>
+                    <open>8.30</open>
+                    <close>16.30</close>
+                </sunday>
+            </openingTimes>
+        </category>
+    </attraction>
+    
+</CatalogAttraction>

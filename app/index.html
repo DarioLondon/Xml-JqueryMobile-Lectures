@@ -1,0 +1,593 @@
+<html xmls="http://www.w3.org/1999/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>London Attractions App</title>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyBcGUwCD0bOKyTetXHsWLVlyFRbaCMw3As"></script><link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="owl.carousel.css">
+<link type="text/css" href="owl.transitions.css">
+<link type="text/css" href="owl.theme.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script rel="javascript" src="jquery-1.12.1.min.js"></script><script rel="javascript" src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script><script rel="javascript" src="owl.carousel.js"></script><script rel="javascript" src="jquery.gmap.js"></script><script rel="javascript" src="app.js"></script><link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div data-role="page" id="home_view">
+<header data-role="header" data-position="fixed" data-id="myheader"><h2>London Atrraction</h2></header><div data-role="navbar"><ul>
+<li><a href="#home_view" class="ui-btn-active" data-icon="bullets"><small>List View</small></a></li>
+<li><a href="#map_list" data-icon="location" id="linkMap"><small>Map View</small></a></li>
+<li><a href="#category" data-icon="tag"><small>Categories</small></a></li>
+</ul></div>
+<div data-role="main"><ul data-role="listview" data-inset="true" data-filter="true">
+<li><a data-transition="fade" href="#id_1"><img width="60" height="60" src="img/bpT.jpg"><h3>Buckingham Palace</h3>
+<p>
+                Buckingham Palace is the London residence and principal workplace of the reigning monarch of the United Kingdom.
+            </p></a></li>
+<li><a data-transition="fade" href="#id_2"><img width="60" height="60" src="img/leT.jpg"><h3>London Eyes</h3>
+<p>The London Eye is a giant Ferris wheel on the South Bank of the River Thames in London.</p></a></li>
+<li><a data-transition="fade" href="#id_3"><img width="60" height="60" src="img/btmT.jpg"><h3>British Museum</h3>
+<p>The British Museum is a museum dedicated to human history, art, and culture, located in the Bloomsbury area of London	</p></a></li>
+<li><a data-transition="fade" href="#id_4"><img width="60" height="60" src="img/smT.jpg"><h3>Science Museum</h3>
+<p>The Science Museum is a major museum on Exhibition Road in South Kensington, London. It was founded in 1857 and today is one of the city's major tourist attractions, attracting 3.3 million visitors annually	</p></a></li>
+<li><a data-transition="fade" href="#id_5"><img width="60" height="60" src="img/stPT.jpg"><h3>St. Paul's Cathedral</h3>
+<p>TSt Paul's Cathedral, London, is an Anglican cathedral, the seat of the Bishop of London and the mother church of the Diocese of London. It sits on Ludgate Hill at the highest point of the City of London.</p></a></li>
+</ul></div>
+<footer data-role="footer" data-position="fixed" data-id="myfooter"><h1>Dario Guida</h1></footer>
+</div>
+<div data-role="page" id="map_list" data-url="map-page">
+<header data-role="header" data-position="fixed" data-id="myheader"><h2>London Atrraction</h2></header><div data-role="navbar"><ul>
+<li><a href="#home_view" data-icon="bullets"><small>List View</small></a></li>
+<li><a href="#map_list" class="ui-btn-active" data-icon="location" id="linkMap"><small>Map View</small></a></li>
+<li><a href="#category" data-icon="tag"><small>Categories</small></a></li>
+</ul></div>
+<div data-role="content" id="map"></div>
+<footer data-role="footer" data-position="fixed" data-id="myfooter"><h1>Dario Guida</h1></footer>
+</div>
+<div data-role="page" id="category">
+<header data-role="header" data-position="fixed" data-id="myheader"><h2>London Atrraction</h2></header><div data-role="navbar"><ul>
+<li><a href="#home_view" data-icon="bullets"><small>List View</small></a></li>
+<li><a href="#map_list" data-icon="location" id="linkMap"><small>Map View</small></a></li>
+<li><a href="#category" class="ui-btn-active" data-icon="tag"><small>Categories</small></a></li>
+</ul></div>
+<div data-role="collapsible">
+<h3>Museums</h3>
+<ul data-role="listview" data-inset="true">
+<li><a data-transition="fade" href="#id_3"><h3>British Museum</h3></a></li>
+<li><a data-transition="fade" href="#id_4"><h3>Science Museum</h3></a></li>
+</ul>
+</div>
+<div data-role="collapsible">
+<h3>Buildings</h3>
+<ul data-role="listview" data-inset="true">
+<li><a data-transition="fade" href="#id_1"><h3>Buckingham Palace</h3></a></li>
+<li><a data-transition="fade" href="#id_5"><h3>St. Paul's Cathedral</h3></a></li>
+</ul>
+</div>
+<div data-role="collapsible">
+<h3>Attractions</h3>
+<ul data-role="listview" data-inset="true"><li><a data-transition="fade" href="#id_2"><h3>London Eyes</h3></a></li></ul>
+</div>
+<footer data-role="footer" data-position="fixed" data-id="myfooter"><h1>Dario Guida</h1></footer>
+</div>
+<div data-role="page" id="id_1">
+<header data-role="header" data-position="fixed" data-id="myheader"><h1>Buckingham Palace</h1>
+<a href="#home_view" data-icon="carat-l" data-icon-pos="left" class="back-button">Back</a></header><div class="owl-carousel" id="carusel-sliderid_1">
+<img class="lazyOwl" width="100%" height="200" data-src="img/bp1.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/bp2.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/bp3.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/bt4.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/bt5.jpg">
+</div>
+<div data-role="main"><div data-role="tabs" data-position="fixed">
+<div class="toolbar-single-up" data-role="navbar"><ul>
+<li><a href="#main-info" class="ui-btn-active" data-icon="location"><small>Map</small></a></li>
+<li><a href="#price" data-icon="shop"><small>Price</small></a></li>
+<li><a href="#info" data-icon="calendar"><small>Time</small></a></li>
+<li><a href="#contact" data-icon="phone"><small>Contact</small></a></li>
+<li><a href="#social" data-icon="info"><small>Social</small></a></li>
+</ul></div>
+<div id="main-info">
+<div id="map_id_1"></div>
+<div class="toolbar-single" data-role="navbar"><ul>
+<li><a href="#" class="ui-btn-active" id="getDirection_id_1">Get Directions</a></li>
+<li><a href="#description" data-rel="popup" data-position-to="window" data-transition="pop">Read about..</a></li>
+</ul></div>
+<div id="description" data-role="popup" data-dismissible="true">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><h4>History </h4>
+<p>
+                Buckingham Palace  is the London residence and principal workplace of the reigning monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focus for the British people at times of national rejoicing.
+                Originally known as Buckingham House, the building at the core of today's palace was a large townhouse built for the Duke of Buckingham in 1703 on a site that had been in private ownership for at least 150 years. It was acquired by King George III in 1761 as a private residence for Queen Charlotte and became known as "The Queen's House". During the 19th century it was enlarged, principally by architects John Nash and Edward Blore, who constructed three wings around a central courtyard. Buckingham Palace became the London residence of the British monarch on the accession of Queen Victoria in 1837.</p>
+</div>
+</div>
+<div id="price"><div data-role="main" class="ui-content">
+<h5>Buy Your Tickets !!! is: 21.50</h5>
+<form method="post" action="demoform.asp">
+<label for="points">Tickets:</label><input type="range" name="points" id="points" value="1" min="1" max="100" data-popup-enabled="true"><input type="submit" data-inline="true" value="Buy it Now">
+</form>
+</div></div>
+<div id="info">
+<h3>Open Day</h3>
+<table data-role="table" class="ui-responsive table-stroke" id="myTable">
+<thead><tr>
+<th></th>
+<th>Open</th>
+<th>Close</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td>10.00</td>
+<td>18.30</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>10.00</td>
+<td>18.30</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>10.00</td>
+<td>18.30</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>10.00</td>
+<td>18.30</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>10.00</td>
+<td>18.30</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>10.00</td>
+<td>18.30</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>10.00</td>
+<td>18.30</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="contact">
+<h4>How To contact Us !!!</h4>
+<address data-icon="location">
+<p><small>Buckingham Palace, London</small></p>
+<p>SW1A 1AA</p>
+</address>
+<h4>Nearest Tube</h4>
+<p>St. James's Park</p>
+<h4>Phone or email Us :</h4>
+<a class="ui-btn ui-icon-mail ui-btn-icon-left" href="mailto:info@londonpass.com">info@londonpass.com</a><a class="ui-btn ui-icon-phone ui-btn-icon-left" href="tel:0303%20123%207300">0303 123 7300</a>
+</div>
+<div id="social">
+<div class="ui-grid-a" style="text-align:center;"><h4>Be Social share your adventures with your Friends</h4></div>
+<div class="ui-grid-a" style="text-align:center;">
+<div class="ui-block-a"><a href="#"><i class="fa fa-facebook-official fa-5x" style="color:rgb(53,74,141);"></i></a></div>
+<div class="ui-block-b"><a href="#"><i class="fa fa-twitter fa-5x" style="color:rgb(19,139,242);"></i></a></div>
+</div>
+<div class="ui-grid-a" style="text-align:center;padding-top:35px;">
+<div class="ui-block-a"><a href="#"><i class="fa fa-google-plus fa-5x" style="color:rgb(206,47,33);"></i></a></div>
+<div class="ui-block-b"><a href="#"><i class="fa fa-instagram fa-5x" style="color:rgb(118,71,59);"></i></a></div>
+</div>
+</div>
+</div></div>
+<footer data-role="footer" data-position="fixed" data-id="myfooter"><h1>Dario Guida</h1></footer>
+</div>
+<div data-role="page" id="id_2">
+<header data-role="header" data-position="fixed" data-id="myheader"><h1>London Eyes</h1>
+<a href="#home_view" data-icon="carat-l" data-icon-pos="left" class="back-button">Back</a></header><div class="owl-carousel" id="carusel-sliderid_2">
+<img class="lazyOwl" width="100%" height="200" data-src="img/le1.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/le2.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/le3.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/le4.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/le5.jpg">
+</div>
+<div data-role="main"><div data-role="tabs" data-position="fixed">
+<div class="toolbar-single-up" data-role="navbar"><ul>
+<li><a href="#main-info" class="ui-btn-active" data-icon="location"><small>Map</small></a></li>
+<li><a href="#price" data-icon="shop"><small>Price</small></a></li>
+<li><a href="#info" data-icon="calendar"><small>Time</small></a></li>
+<li><a href="#contact" data-icon="phone"><small>Contact</small></a></li>
+<li><a href="#social" data-icon="info"><small>Social</small></a></li>
+</ul></div>
+<div id="main-info">
+<div id="map_id_2"></div>
+<div class="toolbar-single" data-role="navbar"><ul>
+<li><a href="#" class="ui-btn-active" id="getDirection_id_2">Get Directions</a></li>
+<li><a href="#description" data-rel="popup" data-position-to="window" data-transition="pop">Read about..</a></li>
+</ul></div>
+<div id="description" data-role="popup" data-dismissible="true">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><h4>History </h4>
+<p>The London Eye is a giant Ferris wheel on the South Bank of the River Thames in London. Also known as the Millennium Wheel, it has also been called by its owners the British Airways London Eye, then the Merlin Entertainments London Eye, then the EDF Energy London Eye. Since mid-January 2015, it has been known as the Coca-Cola London Eye, following an agreement signed in September 2014.
+                The structure is 443 feet (135 m) tall and the wheel has a diameter of 394 feet (120 m). When erected in 1999 it was the world's tallest Ferris wheel. Its height was surpassed by the 520 feet (158 m) tall Star of Nanchang in 2006, the 541 feet (165 m) tall Singapore Flyer in 2008, and the 550 feet (168 m) High Roller (Las Vegas) in 2014. Supported by an A-frame on one side only, unlike the taller Nanchang and Singapore wheels, the Eye is described by its operators as "the world's tallest cantilevered observation wheel".
+                </p>
+</div>
+</div>
+<div id="price"><div data-role="main" class="ui-content">
+<h5>Buy Your Tickets !!! is: 28.35</h5>
+<form method="post" action="demoform.asp">
+<label for="points">Tickets:</label><input type="range" name="points" id="points" value="1" min="1" max="100" data-popup-enabled="true"><input type="submit" data-inline="true" value="Buy it Now">
+</form>
+</div></div>
+<div id="info">
+<h3>Open Day</h3>
+<table data-role="table" class="ui-responsive table-stroke" id="myTable">
+<thead><tr>
+<th></th>
+<th>Open</th>
+<th>Close</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td>10.00</td>
+<td>20.30</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>10.00</td>
+<td>20.30</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>10.00</td>
+<td>20.30</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>10.00</td>
+<td>20.30</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>10.00</td>
+<td>20.30</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>10.00</td>
+<td>20.30</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>10.00</td>
+<td>20.30</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="contact">
+<h4>How To contact Us !!!</h4>
+<address data-icon="location">
+<p><small>Riverside Building County Hall Westminster Bridge Road , London</small></p>
+<p> SE1 7PB</p>
+</address>
+<h4>Nearest Tube</h4>
+<p>Embankment</p>
+<h4>Phone or email Us :</h4>
+<a class="ui-btn ui-icon-mail ui-btn-icon-left" href="mailto:customer.services@londoneye.com%20">customer.services@londoneye.com </a><a class="ui-btn ui-icon-phone ui-btn-icon-left" href="tel:+44%20(0)871%20781%203000">+44 (0)871 781 3000</a>
+</div>
+<div id="social">
+<div class="ui-grid-a" style="text-align:center;"><h4>Be Social share your adventures with your Friends</h4></div>
+<div class="ui-grid-a" style="text-align:center;">
+<div class="ui-block-a"><a href="#"><i class="fa fa-facebook-official fa-5x" style="color:rgb(53,74,141);"></i></a></div>
+<div class="ui-block-b"><a href="#"><i class="fa fa-twitter fa-5x" style="color:rgb(19,139,242);"></i></a></div>
+</div>
+<div class="ui-grid-a" style="text-align:center;padding-top:35px;">
+<div class="ui-block-a"><a href="#"><i class="fa fa-google-plus fa-5x" style="color:rgb(206,47,33);"></i></a></div>
+<div class="ui-block-b"><a href="#"><i class="fa fa-instagram fa-5x" style="color:rgb(118,71,59);"></i></a></div>
+</div>
+</div>
+</div></div>
+<footer data-role="footer" data-position="fixed" data-id="myfooter"><h1>Dario Guida</h1></footer>
+</div>
+<div data-role="page" id="id_3">
+<header data-role="header" data-position="fixed" data-id="myheader"><h1>British Museum</h1>
+<a href="#home_view" data-icon="carat-l" data-icon-pos="left" class="back-button">Back</a></header><div class="owl-carousel" id="carusel-sliderid_3">
+<img class="lazyOwl" width="100%" height="200" data-src="img/btm1.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/btm2.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/btm3.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/btm4.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/btm5.jpg">
+</div>
+<div data-role="main"><div data-role="tabs" data-position="fixed">
+<div class="toolbar-single-up" data-role="navbar"><ul>
+<li><a href="#main-info" class="ui-btn-active" data-icon="location"><small>Map</small></a></li>
+<li><a href="#price" data-icon="shop"><small>Price</small></a></li>
+<li><a href="#info" data-icon="calendar"><small>Time</small></a></li>
+<li><a href="#contact" data-icon="phone"><small>Contact</small></a></li>
+<li><a href="#social" data-icon="info"><small>Social</small></a></li>
+</ul></div>
+<div id="main-info">
+<div id="map_id_3"></div>
+<div class="toolbar-single" data-role="navbar"><ul>
+<li><a href="#" class="ui-btn-active" id="getDirection_id_3">Get Directions</a></li>
+<li><a href="#description" data-rel="popup" data-position-to="window" data-transition="pop">Read about..</a></li>
+</ul></div>
+<div id="description" data-role="popup" data-dismissible="true">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><h4>History </h4>
+<p>
+                The British Museum is a museum dedicated to human history, art, and culture, located in the Bloomsbury area of London. Its permanent collection, numbering some 8 million works, is among the largest and most comprehensive in existence and originates from all continents, illustrating and documenting the story of human culture from its beginnings to the present.
+                The British Museum was established in 1753, largely based on the collections of the physician and scientist Sir Hans Sloane. The museum first opened to the public on 15 January 1759, in Montagu House in Bloomsbury, on the site of the current museum building. Its expansion over the following two and a half centuries was largely a result of an expanding British colonial footprint and has resulted in the creation of several branch institutions, the first being the British Museum (Natural History) in South Kensington in 1881. Some objects in the collection, most notably the Elgin Marbles from the Parthenon, are the objects of controversy and of calls for restitution to their countries of origin.
+                	</p>
+</div>
+</div>
+<div id="price"><div data-role="main" class="ui-content">
+<h5>Buy Your Tickets !!! is: Free</h5>
+<form method="post" action="demoform.asp">
+<label for="points">Tickets:</label><input type="range" name="points" id="points" value="1" min="1" max="100" data-popup-enabled="true"><input type="submit" data-inline="true" value="Buy it Now">
+</form>
+</div></div>
+<div id="info">
+<h3>Open Day</h3>
+<table data-role="table" class="ui-responsive table-stroke" id="myTable">
+<thead><tr>
+<th></th>
+<th>Open</th>
+<th>Close</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td>10.00</td>
+<td>17.30</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>10.00</td>
+<td>17.30</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>10.00</td>
+<td>17.30</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>10.00</td>
+<td>17.30</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>10.00</td>
+<td>17.30</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>10.00</td>
+<td>17.30</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>10.00</td>
+<td>17.30</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="contact">
+<h4>How To contact Us !!!</h4>
+<address data-icon="location">
+<p><small>Great Russell St, London</small></p>
+<p> WC1B 3DG </p>
+</address>
+<h4>Nearest Tube</h4>
+<p>Holborn</p>
+<h4>Phone or email Us :</h4>
+<a class="ui-btn ui-icon-mail ui-btn-icon-left" href="mailto:information@britishmuseum.org">information@britishmuseum.org</a><a class="ui-btn ui-icon-phone ui-btn-icon-left" href="tel:+44(0)20%207323%208299">+44(0)20 7323 8299</a>
+</div>
+<div id="social">
+<div class="ui-grid-a" style="text-align:center;"><h4>Be Social share your adventures with your Friends</h4></div>
+<div class="ui-grid-a" style="text-align:center;">
+<div class="ui-block-a"><a href="#"><i class="fa fa-facebook-official fa-5x" style="color:rgb(53,74,141);"></i></a></div>
+<div class="ui-block-b"><a href="#"><i class="fa fa-twitter fa-5x" style="color:rgb(19,139,242);"></i></a></div>
+</div>
+<div class="ui-grid-a" style="text-align:center;padding-top:35px;">
+<div class="ui-block-a"><a href="#"><i class="fa fa-google-plus fa-5x" style="color:rgb(206,47,33);"></i></a></div>
+<div class="ui-block-b"><a href="#"><i class="fa fa-instagram fa-5x" style="color:rgb(118,71,59);"></i></a></div>
+</div>
+</div>
+</div></div>
+<footer data-role="footer" data-position="fixed" data-id="myfooter"><h1>Dario Guida</h1></footer>
+</div>
+<div data-role="page" id="id_4">
+<header data-role="header" data-position="fixed" data-id="myheader"><h1>Science Museum</h1>
+<a href="#home_view" data-icon="carat-l" data-icon-pos="left" class="back-button">Back</a></header><div class="owl-carousel" id="carusel-sliderid_4">
+<img class="lazyOwl" width="100%" height="200" data-src="img/sm1.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/sm2.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/sm3.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/sm4.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/sm5.jpg">
+</div>
+<div data-role="main"><div data-role="tabs" data-position="fixed">
+<div class="toolbar-single-up" data-role="navbar"><ul>
+<li><a href="#main-info" class="ui-btn-active" data-icon="location"><small>Map</small></a></li>
+<li><a href="#price" data-icon="shop"><small>Price</small></a></li>
+<li><a href="#info" data-icon="calendar"><small>Time</small></a></li>
+<li><a href="#contact" data-icon="phone"><small>Contact</small></a></li>
+<li><a href="#social" data-icon="info"><small>Social</small></a></li>
+</ul></div>
+<div id="main-info">
+<div id="map_id_4"></div>
+<div class="toolbar-single" data-role="navbar"><ul>
+<li><a href="#" class="ui-btn-active" id="getDirection_id_4">Get Directions</a></li>
+<li><a href="#description" data-rel="popup" data-position-to="window" data-transition="pop">Read about..</a></li>
+</ul></div>
+<div id="description" data-role="popup" data-dismissible="true">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><h4>History </h4>
+<p>A museum was founded in 1857 under Bennet Woodcroft from the collection of the Royal Society of Arts and surplus items from the Great Exhibition as part of the South Kensington Museum, together with what is now the Victoria and Albert Museum. It included a collection of machinery which became the Museum of Patents in 1858, and the Patent Office Museum in 1863. This collection contained many of the most famous exhibits of what is now the Science Museum. In 1883, the contents of the Patent Office Museum were transferred to the South Kensington Museum. In 1885, the Science Collections were renamed the Science Museum and in 1893 a separate director was appointed. The Art Collections were renamed the Art Museum, which eventually became the Victoria and Albert Museum.When Queen Victoria laid the foundation stone for the new building for the Art Museum, she stipulated that the museum be renamed after herself and her late husband. This was initially applied to the whole museum, but when that new building finally opened ten years later, the title was confined to the Art Collections and the Science Collections had to be divorced from it. </p>
+</div>
+</div>
+<div id="price"><div data-role="main" class="ui-content">
+<h5>Buy Your Tickets !!! is: Free</h5>
+<form method="post" action="demoform.asp">
+<label for="points">Tickets:</label><input type="range" name="points" id="points" value="1" min="1" max="100" data-popup-enabled="true"><input type="submit" data-inline="true" value="Buy it Now">
+</form>
+</div></div>
+<div id="info">
+<h3>Open Day</h3>
+<table data-role="table" class="ui-responsive table-stroke" id="myTable">
+<thead><tr>
+<th></th>
+<th>Open</th>
+<th>Close</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td>10.00</td>
+<td>17.30</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>10.00</td>
+<td>17.30</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>10.00</td>
+<td>17.30</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>10.00</td>
+<td>17.30</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>10.00</td>
+<td>17.30</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>10.00</td>
+<td>17.30</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>10.00</td>
+<td>17.30</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="contact">
+<h4>How To contact Us !!!</h4>
+<address data-icon="location">
+<p><small>Exhibition Rd, London</small></p>
+<p> SW7 2DD</p>
+</address>
+<h4>Nearest Tube</h4>
+<p>South Kensington Station</p>
+<h4>Phone or email Us :</h4>
+<a class="ui-btn ui-icon-mail ui-btn-icon-left" href="mailto:info@sciencemuseum.ac.uk">info@sciencemuseum.ac.uk</a><a class="ui-btn ui-icon-phone ui-btn-icon-left" href="tel:+44(0)870%20870%204868">+44(0)870 870 4868</a>
+</div>
+<div id="social">
+<div class="ui-grid-a" style="text-align:center;"><h4>Be Social share your adventures with your Friends</h4></div>
+<div class="ui-grid-a" style="text-align:center;">
+<div class="ui-block-a"><a href="#"><i class="fa fa-facebook-official fa-5x" style="color:rgb(53,74,141);"></i></a></div>
+<div class="ui-block-b"><a href="#"><i class="fa fa-twitter fa-5x" style="color:rgb(19,139,242);"></i></a></div>
+</div>
+<div class="ui-grid-a" style="text-align:center;padding-top:35px;">
+<div class="ui-block-a"><a href="#"><i class="fa fa-google-plus fa-5x" style="color:rgb(206,47,33);"></i></a></div>
+<div class="ui-block-b"><a href="#"><i class="fa fa-instagram fa-5x" style="color:rgb(118,71,59);"></i></a></div>
+</div>
+</div>
+</div></div>
+<footer data-role="footer" data-position="fixed" data-id="myfooter"><h1>Dario Guida</h1></footer>
+</div>
+<div data-role="page" id="id_5">
+<header data-role="header" data-position="fixed" data-id="myheader"><h1>St. Paul's Cathedral</h1>
+<a href="#home_view" data-icon="carat-l" data-icon-pos="left" class="back-button">Back</a></header><div class="owl-carousel" id="carusel-sliderid_5">
+<img class="lazyOwl" width="100%" height="200" data-src="img/stP1.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/stP2.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/stP3.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/stP4.jpg"><img class="lazyOwl" width="100%" height="200" data-src="img/stP5.jpg">
+</div>
+<div data-role="main"><div data-role="tabs" data-position="fixed">
+<div class="toolbar-single-up" data-role="navbar"><ul>
+<li><a href="#main-info" class="ui-btn-active" data-icon="location"><small>Map</small></a></li>
+<li><a href="#price" data-icon="shop"><small>Price</small></a></li>
+<li><a href="#info" data-icon="calendar"><small>Time</small></a></li>
+<li><a href="#contact" data-icon="phone"><small>Contact</small></a></li>
+<li><a href="#social" data-icon="info"><small>Social</small></a></li>
+</ul></div>
+<div id="main-info">
+<div id="map_id_5"></div>
+<div class="toolbar-single" data-role="navbar"><ul>
+<li><a href="#" class="ui-btn-active" id="getDirection_id_5">Get Directions</a></li>
+<li><a href="#description" data-rel="popup" data-position-to="window" data-transition="pop">Read about..</a></li>
+</ul></div>
+<div id="description" data-role="popup" data-dismissible="true">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><h4>History </h4>
+<p>St Paul's Cathedral, London, is an Anglican cathedral, the seat of the Bishop of London and the mother church of the Diocese of London. It sits on Ludgate Hill at the highest point of the City of London. Its dedication to Paul the Apostle dates back to the original church on this site, founded in AD 604. The present church, dating from the late 17th century, was designed in the English Baroque style by Sir Christopher Wren. Its construction, completed in Wren's lifetime, was part of a major rebuilding programme in the City after the Great Fire of London.
+                The cathedral is one of the most famous and most recognisable sights of London. Its dome, framed by the spires of Wren's City churches, dominated the skyline for 300 years. At 365 feet (111 m) high, it was the tallest building in London from 1710 to 1962. The dome is among the highest in the world. St Paul's is the second largest church building in area in the United Kingdom after Liverpool Cathedral.
+                </p>
+</div>
+</div>
+<div id="price"><div data-role="main" class="ui-content">
+<h5>Buy Your Tickets !!! is: 18.00</h5>
+<form method="post" action="demoform.asp">
+<label for="points">Tickets:</label><input type="range" name="points" id="points" value="1" min="1" max="100" data-popup-enabled="true"><input type="submit" data-inline="true" value="Buy it Now">
+</form>
+</div></div>
+<div id="info">
+<h3>Open Day</h3>
+<table data-role="table" class="ui-responsive table-stroke" id="myTable">
+<thead><tr>
+<th></th>
+<th>Open</th>
+<th>Close</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td>8.30</td>
+<td>16.30</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>8.30</td>
+<td>16.30</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>8.30</td>
+<td>16.30</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>8.30</td>
+<td>16.30</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>8.30</td>
+<td>16.30</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>8.30</td>
+<td>16.30</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>8.30</td>
+<td>16.30</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="contact">
+<h4>How To contact Us !!!</h4>
+<address data-icon="location">
+<p><small>St. Paul's Churchyard, London </small></p>
+<p> EC4M 8AD </p>
+</address>
+<h4>Nearest Tube</h4>
+<p>St. Pauls's</p>
+<h4>Phone or email Us :</h4>
+<a class="ui-btn ui-icon-mail ui-btn-icon-left" href="mailto:ireception@stpaulscathedral.org.uk">ireception@stpaulscathedral.org.uk</a><a class="ui-btn ui-icon-phone ui-btn-icon-left" href="tel:+44(0)207%20246%208348">+44(0)207 246 8348</a>
+</div>
+<div id="social">
+<div class="ui-grid-a" style="text-align:center;"><h4>Be Social share your adventures with your Friends</h4></div>
+<div class="ui-grid-a" style="text-align:center;">
+<div class="ui-block-a"><a href="#"><i class="fa fa-facebook-official fa-5x" style="color:rgb(53,74,141);"></i></a></div>
+<div class="ui-block-b"><a href="#"><i class="fa fa-twitter fa-5x" style="color:rgb(19,139,242);"></i></a></div>
+</div>
+<div class="ui-grid-a" style="text-align:center;padding-top:35px;">
+<div class="ui-block-a"><a href="#"><i class="fa fa-google-plus fa-5x" style="color:rgb(206,47,33);"></i></a></div>
+<div class="ui-block-b"><a href="#"><i class="fa fa-instagram fa-5x" style="color:rgb(118,71,59);"></i></a></div>
+</div>
+</div>
+</div></div>
+<footer data-role="footer" data-position="fixed" data-id="myfooter"><h1>Dario Guida</h1></footer>
+</div>
+</body>
+</html>
